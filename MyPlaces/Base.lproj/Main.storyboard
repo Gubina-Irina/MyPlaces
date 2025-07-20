@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--My Places-->
         <scene sceneID="9WD-O4-i7Q">
             <objects>
                 <tableViewController id="a1J-UJ-fte" customClass="MainViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="a1J-UJ-fte" id="VHr-eI-NUi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="XF6-We-vsT"/>
+                    <navigationItem key="navigationItem" title="My Places" id="XF6-We-vsT"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzH-Vr-neM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,6 +43,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YMr-aP-vxx">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="25"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <color key="textShadowColor" systemColor="labelColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="a1J-UJ-fte" kind="relationship" relationship="rootViewController" id="TLU-my-3RV"/>
@@ -54,6 +59,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
